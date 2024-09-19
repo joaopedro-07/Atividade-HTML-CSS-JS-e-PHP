@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+
+main {
+    background-color: rgb(0, 100, 55);
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #FF2C20;
+}
+
+h2 {
+    color: white;
+    margin-top: 50px;
+}
+
+div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3); /* Fundo branco com opacidade */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 200px rgba(255, 255, 255, 0.2);
+    border: 2px solid darkgreen;
+    height: 400px;
+    align-items: center;
+}
+
+img {
+    width: 500px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+li {
+    margin: 0 50px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
