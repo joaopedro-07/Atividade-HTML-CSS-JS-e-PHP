@@ -12,9 +12,9 @@
     <main>
         <?php
             if($_SERVER["REQUEST_METHOD"] == "POST") {
-                $produto = htmlspecialchars(string: $_POST['produtoInserido']);
-                $nota = htmlspecialchars(string: $_POST['star']);
-                $comentario = htmlspecialchars(string: $_POST['comentarioInserido']);
+                $produto = $_POST['produtoInserido'];
+                $nota = $_POST['star'];
+                $comentario = $_POST['comentarioInserido'];
 
                 echo "<h1>Obrigado! Seu feedback foi enviado.</h1>";
                 echo "<div>";
@@ -24,7 +24,7 @@
                 echo "</div>";
             }
             else {
-                echo "<h1>agagfawfa</h1>";
+                echo "<h1>Método do formulário não é 'post'</h1>";
             }
         ?>
     </main>
@@ -68,5 +68,9 @@
 
     h2 {
         font-weight: 400;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-break: break-all;
+        white-space: normal;
     }
 </style>

@@ -12,9 +12,9 @@
     <main>
         <?php
             if($_SERVER["REQUEST_METHOD"] == "POST") {
-                $nome = htmlspecialchars(string: $_POST['nomeInserido']);
-                $email = htmlspecialchars(string: $_POST['emailInserido']);
-                $telefone = htmlspecialchars(string: $_POST['telefoneInserido']);
+                $nome = $_POST['nomeInserido'];
+                $email = $_POST['emailInserido'];
+                $telefone = $_POST['telefoneInserido'];
 
                 echo "<h1>Seu cadastro foi concluído!</h1>";
                 echo "<div>";
@@ -24,7 +24,7 @@
                 echo "</div>";
             }
             else {
-                echo "<h1>agagfawfa</h1>";
+                echo "<h1>Método do formulário não é 'post'</h1>";
             }
         ?>
     </main>
@@ -68,6 +68,8 @@
 
     h2 {
         font-weight: 400;
-        
+        overflow-wrap: break-word;
+        word-break: break-all;
+        white-space: normal;
     }
 </style>
