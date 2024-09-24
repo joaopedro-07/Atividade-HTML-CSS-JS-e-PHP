@@ -6,21 +6,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Cadastro Concluído!</title>
+    <title>Obrigado pelo feedback!</title>
 </head>
 <body>
     <main>
         <?php
             if($_SERVER["REQUEST_METHOD"] == "POST") {
-                $nome = htmlspecialchars(string: $_POST['nomeInserido']);
-                $email = htmlspecialchars(string: $_POST['emailInserido']);
-                $telefone = htmlspecialchars(string: $_POST['telefoneInserido']);
+                $produto = htmlspecialchars(string: $_POST['produtoInserido']);
+                $nota = htmlspecialchars(string: $_POST['star']);
+                $comentario = htmlspecialchars(string: $_POST['comentarioInserido']);
 
-                echo "<h1>Seu cadastro foi concluído!</h1>";
+                echo "<h1>Obrigado! Seu feedback foi enviado.</h1>";
                 echo "<div>";
-                echo "<h2><strong>Nome:</strong> $nome</h2>";
-                echo "<h2><strong>Email:</strong> $email</h2>";
-                echo "<h2><strong>Telefone:</strong> $telefone</h2>";
+                echo "<h2><strong>Nome do produto:</strong> $produto</h2>";
+                echo "<h2><strong>Nota:</strong> $nota</h2>";
+                echo "<h2><strong>Comentário:</strong> $comentario</h2>";
                 echo "</div>";
             }
             else {
@@ -68,6 +68,5 @@
 
     h2 {
         font-weight: 400;
-        
     }
 </style>
