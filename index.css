@@ -41,6 +41,7 @@ div {
 
 img {
     width: 500px;
+    border-radius: 10px;
 }
 
 h3 {
@@ -61,4 +62,8 @@ li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+
+li a:hover {
+    color: lightgray;
 }
